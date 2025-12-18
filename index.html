@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirth Shah | Data Analyst Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f9f4; /* Softest Sage */
+            --accent-green: #86a789; /* Matcha Green */
+            --dark-green: #4f6f52; /* Deep Forest */
+            --text-main: #2d3a2d;
+            --white: #ffffff;
+            --link-pink: #d63384; /* Reference image accent color */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            scroll-behavior: smooth;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 10%;
+            border-bottom: 1px solid rgba(134, 167, 137, 0.2);
+        }
+
+        .container { max-width: 1100px; width: 100%; }
+
+        h1, h2 { font-family: 'DM Serif Display', serif; color: var(--dark-green); }
+
+        /* HERO SECTION */
+        .hero-flex {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            flex-wrap: wrap-reverse;
+        }
+
+        .hero-text { flex: 1; min-width: 300px; }
+        .hero-text h1 { font-size: 4rem; margin-bottom: 1rem; line-height: 1.1; }
+        .hero-text p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; }
+
+        .profile-img {
+            width: 350px;
+            height: 445px;
+            border-radius: 30px;
+            object-fit: cover;
+            border: 8px solid var(--white);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            background-color: #ddd;
+        }
+
+        /* SKILLS PILLS */
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 2rem; }
+        .pill {
+            background: var(--white);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            border: 1px solid var(--accent-green);
+            font-weight: 600;
+            color: var(--dark-green);
+            font-size: 0.9rem;
+        }
+
+        /* PROJECTS */
+        .project-item {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            transition: 0.3s ease;
+            border-left: 5px solid var(--accent-green);
+        }
+        .project-item:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        
+        .project-meta {
+            font-size: 0.8rem;
+            color: var(--accent-green);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .github-link {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--dark-green);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+        }
+
+        /* NEW TWO-COLUMN CONTACT SECTION */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: start;
+            text-align: left;
+        }
+
+        .contact-left h2 { font-size: 3.5rem; margin-bottom: 2rem; }
+        .contact-left p { font-size: 1.15rem; line-height: 1.7; color: #444; margin-bottom: 1.5rem; }
+
+        .contact-right { display: flex; flex-direction: column; gap: 2.5rem; }
+        .contact-item { display: flex; flex-direction: column; gap: 0.4rem; }
+        .contact-item img { width: 32px; margin-bottom: 0.5rem; opacity: 0.8; }
+        .contact-item a { 
+            color: var(--link-pink); 
+            font-weight: 700; 
+            text-decoration: underline; 
+            font-size: 1.3rem; 
+        }
+        .contact-item span { color: #666; font-size: 0.95rem; }
+
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 2.5rem; }
+            .profile-img { width: 100%; height: auto; }
+            .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="container hero-flex">
+            <div class="hero-text">
+                <p style="text-transform: uppercase; letter-spacing: 2px; color: var(--accent-green); font-weight: 600;">Data Analyst | Business Intelligence</p>
+                <h1>Tirth Shah</h1>
+                <p>Data Analyst with hands-on experience building interactive dashboards and analyzing data using Python and SQL. Skilled in transforming complex data into clear narratives.</p>
+                <div class="skills-grid">
+                    <span class="pill">Python (Pandas, NumPy)</span>
+                    <span class="pill">SQL (PostgreSQL, MySQL)</span>
+                    <span class="pill">Power BI</span>
+                    <span class="pill">Excel</span>
+                    <span class="pill">Machine Learning</span>
+                </div>
+                <a href="#contact" class="github-link" style="background: var(--accent-green); margin-top: 2rem;">Work With Me</a>
+            </div>
+            <img src="C:\Users\tirth\Downloads\tirth\pfp.jpeg" alt="Tirth Shah" class="profile-img">
+        </div>
+    </section>
+
+    <section style="background-color: var(--white);">
+        <div class="container">
+            <h2>01. Experience</h2>
+            <div class="about-content" style="margin-top: 2rem;">
+                <h3 style="color: var(--dark-green);">Data Analyst Intern — Humble Walking</h3>
+                <p style="font-size: 1rem; color: var(--accent-green); margin-bottom: 1rem;">Aug 2025 - Sep 2025</p>
+                <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">
+                   Performed end-to-end data analysis using <span class="highlight">Python and SQL</span> to identify user behavior patterns and engagement trends.
+Built interactive <span class="highlight">Power BI dashboards</span> to monitor user engagement metrics and support data-driven decision-making.
+        <div class="project-item">
+            <p class="project-meta">HumbleWalking</p>
+            <h3>Data Analyst Internship Completion</h3>
+            <p>
+                Successfully completed a one-month internship working on real-world data
+                analysis tasks, dashboards, and reporting for business stakeholders.
+            </p>
+            <a href="C:\Users\tirth\Downloads\tirth\Tirth Shah Completion Letter.pdf.pdf" class="github-link">
+                View Certificate
+            </a>
+        </div>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 style="margin-bottom: 3rem;">02. Technical Projects</h2>
+            <div class="project-list">
+                
+                <div class="project-item">
+                    <p class="project-meta">Python • Scikit-learn • Random Forest</p>
+                    <h3>Credit Card Approval Prediction</h3>
+                    <p>Built a predictive ML model for financial risk analytics, achieving 85% accuracy through EDA and feature engineering[cite: 25, 26].</p>
+                    <a href="https://github.com/tirthshah3105" class="github-link">View Repository</a>
+                </div>
+
+                <div class="project-item">
+                    <p class="project-meta">Python • MySQL • Tkinter</p>
+                    <h3>Bank Management System</h3>
+                    <p>Developed a GUI-based database system to manage customer accounts and implement reliable financial record handling[cite: 30, 31].</p>
+                    <a href="https://github.com/tirthshah3105" class="github-link">View Repository</a>
+                </div>
+
+                <div class="project-item">
+                    <p class="project-meta">Node.js • Prisma • PostgreSQL</p>
+                    <h3>User Authentication API</h3>
+                    <p>Built automated data validation APIs for user dataset verification and storage using Prisma ORM[cite: 34, 35].</p>
+                    <a href="https://github.com/tirthshah3105" class="github-link">View Repository</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<section style="background-color: var(--white);">
+    <div class="container">
+        <h2 style="margin-bottom: 3rem;">03. Certifications</h2>
+
+        <div class="project-item">
+            <p class="project-meta">Cisco Networking Academy</p>
+            <h3>Data Analytics Essentials</h3>
+            <p>
+                Covered fundamentals of data analysis including data cleaning, visualization,
+                basic statistics, and analytical thinking for business use cases.
+            </p>
+            <a href="C:\Users\tirth\Downloads\tirth\DataAnalyticsEssentials_tirth shah.pdf" class="github-link">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="project-item">
+            <p class="project-meta">IBM • Cognitive Class</p>
+            <h3>Python 101 for Data Science</h3>
+            <p>
+                Gained hands-on experience with Python programming for data analysis,
+                including data structures, functions, and basic data manipulation.
+            </p>
+            <a href="C:\Users\tirth\Downloads\tirth\IBM PY0101EN Certificate _ Cognitive Class.pdf" class="github-link">
+                View Certificate
+            </a>
+        </div>
+
+
+
+    </div>
+</section>
+
+    <section id="contact" style="background-color: #fdfbf7;">
+        <div class="container contact-layout">
+            <div class="contact-left">
+                <h2>Let's Connect</h2>
+                <p>Thank you for visiting my portfolio. I'm always open to discussing new opportunities in data analytics and business intelligence. Whether you're looking for insights on how data can transform your operations or seeking a collaborative partner, I'd love to connect.</p>
+                <p>My approach combines technical expertise with business acumen to deliver solutions that drive real impact. Let's explore how we can work together.</p>
+            </div>
+
+            <div class="contact-right">
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                    <a href="https://www.linkedin.com/in/tirth-shah31">LinkedIn</a>
+                    <span>Connect with me professionally</span>
+                </div>
+
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                    <a href="https://github.com/tirthshah3105">GitHub</a>
+                    <span>Explore my code repositories</span>
+                </div>
+
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+                    <a href="mailto:tirthshah3105@gmail.com">Email</a>
+                    <span>tirthshah3105@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
